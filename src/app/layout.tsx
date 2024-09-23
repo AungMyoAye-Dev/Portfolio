@@ -25,11 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Provider attribute="class" defaultTheme="dark">
+        <Provider attribute="class" defaultTheme="system" enableSystem>
           <div className="max-7xl mx-auto">{children}</div>
         </Provider>
       </body>
