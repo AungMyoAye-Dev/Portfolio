@@ -47,8 +47,8 @@ export const TextGenerateEffect = ({
                 word === "UX" ||
                 word === "Myanmar" ||
                 word === "Expriences"
-                  ? "text-purple-400"
-                  : " dark:text-white text-black"
+                  ? "text-purple-700 dark:text-purple-400"
+                  : " dark:text-white text-slate-800"
               } opacity-0`}
               style={{
                 filter: filter ? "blur(10px)" : "none",
