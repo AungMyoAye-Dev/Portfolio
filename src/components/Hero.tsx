@@ -7,6 +7,7 @@ import { AuroraBackground } from "./ui/AuroraBackground";
 import React from "react";
 import { TextGenerateEffect } from "./ui/TextEffect";
 import Image from "next/image";
+import { Button } from "./ui/MovingBorder";
 
 const Hero = () => {
   return (
@@ -43,9 +44,14 @@ const Hero = () => {
                 duration={2}
               />
 
-              <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-                Debug now
-              </button>
+              <Button
+                borderRadius="1.75rem"
+                borderClassName="size-20"
+                duration={Math.floor(Math.random() * 10000) + 1000}
+                className=" text-black dark:text-white border-neutral-400 dark:border-slate-800 bg-slate-300 dark:bg-gray-800 text-base opacity-95 hover:text-purple-400"
+              >
+                Lets get in touch
+              </Button>
             </div>
             <div className="relative size-60 md:size-80  ">
               <Image
