@@ -46,20 +46,25 @@ const Hero = () => {
 
               <Button
                 borderRadius="1.75rem"
-                borderClassName="size-20"
                 duration={Math.floor(Math.random() * 10000) + 1000}
-                className=" text-black dark:text-white border-neutral-400 dark:border-slate-800 bg-slate-300 dark:bg-gray-800 text-base opacity-95 hover:text-purple-400"
+                className=" text-black dark:text-white border-neutral-400 dark:border-slate-800 bg-slate-300 dark:bg-gray-800 text-base opacity-95 hover:bg-purple-400 px-8 py-4 shadow-md"
               >
-                Lets get in touch
+                Get in touch
               </Button>
             </div>
-            <div className="relative size-60 md:size-80  ">
-              <Image
-                src={""}
-                fill
-                alt="Aung Myo Aye's profile photo"
-                className="object-cover bg-gray-500 "
-              />
+            <div>
+              <Button
+                borderRadius="1.75rem"
+                duration={Math.floor(Math.random() * 10000) + 10000}
+                className="relative size-60 md:size-80  "
+              >
+                <Image
+                  src={""}
+                  fill
+                  alt="Aung Myo Aye's profile photo"
+                  className="object-cover  "
+                />
+              </Button>
             </div>
           </motion.div>
         </div>
