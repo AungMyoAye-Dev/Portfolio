@@ -10,37 +10,39 @@ const Nav = () => {
           href="/"
           className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
         >
-          <h1 className="text-2xl md:text-3xl font-serif font-bold">
-            Aung Myo Aye{" "}
+          <h1 className="text-2xl md:text-3xl font-serif font-bold text-purple-500">
+            AMA
           </h1>
         </a>
       </div>
-      <div className="flex items-center gap-8 text-xl ">
+      <div className="flex items-center gap-8 ">
         <ThemeChanger />
-        <a
-          href="/"
-          className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
-        >
-          Home
-        </a>
-        <a
-          href="#about"
-          className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
-        >
-          About
-        </a>
-        <a
-          href="#eduction"
-          className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
-        >
-          Eduction
-        </a>
-        <a
-          href="#contact"
-          className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
-        >
-          Contact
-        </a>
+        <div className="hidden md:flex items-center gap-8 text-xl ">
+          <a
+            href="/"
+            className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
+          >
+            About
+          </a>
+          <a
+            href="#eduction"
+            className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
+          >
+            Eduction
+          </a>
+          <a
+            href="#contact"
+            className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
+          >
+            Contact
+          </a>
+        </div>
       </div>
     </nav>
   );
