@@ -19,7 +19,7 @@ const Nav = () => {
         <ThemeChanger />
         <div className="hidden md:flex items-center gap-8 text-xl ">
           <a
-            href="/"
+            href="#home"
             className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
           >
             Home

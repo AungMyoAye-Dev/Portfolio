@@ -11,7 +11,7 @@ import { Button } from "./ui/MovingBorder";
 
 const Hero = () => {
   return (
-    <section>
+    <section id="home">
       <AuroraBackground>
         <div className="h-[50rem] w-full  dark:bg-grid-white/[0.03] bg-grid-black/[0.04] relative flex items-center justify-center">
           {/* Radial gradient for the container to give a faded look */}
@@ -56,7 +56,7 @@ const Hero = () => {
                 <Button
                   borderRadius="1.75rem"
                   duration={Math.floor(Math.random() * 10000) + 1000}
-                  className=" text-black dark:text-white border-neutral-400 dark:border-slate-800  dark:bg-gray-800 text-base opacity-95 hover:bg-purple-400 px-6 py-3 shadow-md"
+                  className=" text-black dark:text-white border-neutral-400 dark:border-slate-800   text-base bg-opacity-95 bg-purple-700 px-6 py-3 shadow-md"
                 >
                   Download My Resume
                 </Button>
