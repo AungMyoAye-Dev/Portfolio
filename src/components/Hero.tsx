@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section id="home">
       <AuroraBackground>
-        <div className="h-[50rem] w-full  dark:bg-grid-white/[0.03] bg-grid-black/[0.04] relative flex items-center justify-center">
+        <div className="h-full w-full  dark:bg-grid-white/[0.03] bg-grid-gray-800/[0.2] relative flex items-center justify-center">
           {/* Radial gradient for the container to give a faded look */}
           <div className="absolute -z-10 pointer-events-none inset-0 flex items-center justify-center  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
