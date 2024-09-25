@@ -27,7 +27,6 @@ export function Button({
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: any;
 }) {
   return (
     <Component

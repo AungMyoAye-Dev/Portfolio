@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBackground";
 import Image from "next/image";
 import { Button } from "./MovingBorder";
-
 export const BentoGrid = ({
   className,
   children,
@@ -44,7 +43,7 @@ export const BentoGridItem = ({
         className
       )}
     >
-      <div className="h-full ">
+      <div className={`${id === 6 && "flex justify-center"} h-full`}>
         {/* Image section */}
         <div className="h-full w-full absolute">
           {image && (
@@ -75,7 +74,20 @@ export const BentoGridItem = ({
           )}
         >
           <p className="font-extralight  md:text-base">{description}</p>
-          <h1 className=" text-lg md:text-xl font-bold z-10">{title}</h1>
+          <h1 className=" text-lg md:text-xl font-bold max-w-96  z-10">
+            {title}
+          </h1>
+          {id === 6 && (
+            <div className="relative mt-4 mx-auto">
+              <Button
+                borderRadius="1.75rem"
+                duration={Math.floor(Math.random() * 10000) + 1000}
+                className=" text-black dark:text-white border-neutral-400 dark:border-slate-800 bg-slate-900  text-base bg-opacity-95 px-6 py-3 shadow-md"
+              >
+                Download My Resume
+              </Button>
+            </div>
+          )}
         </div>
       </div>
     </div>
