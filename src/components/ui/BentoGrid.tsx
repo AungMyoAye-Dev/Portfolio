@@ -44,6 +44,7 @@ export const BentoGridItem = ({
       )}
     >
       <div className="h-full ">
+        {/* Image section */}
         <div className="h-full w-full absolute">
           {image && (
             <div className="relative h-full w-full ">
@@ -56,6 +57,14 @@ export const BentoGridItem = ({
             </div>
           )}
         </div>
+
+        {id === 6 && (
+          <BackgroundGradientAnimation>
+            <div className="absolute z-50 inset-0 flex flex-col items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
+          </BackgroundGradientAnimation>
+        )}
+
+        {/* Title and descprition section */}
 
         <div
           className={cn(
