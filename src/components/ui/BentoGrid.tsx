@@ -27,12 +27,14 @@ export const BentoGridItem = ({
   title,
   description,
   image,
+  titleClassName,
 }: {
   id: number;
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   image?: string;
+  titleClassName?: string;
 }) => {
   return (
     <div
@@ -42,18 +44,28 @@ export const BentoGridItem = ({
       )}
     >
       <div className="h-full">
-        {image && (
-          <div className="relative h-full w-full">
-            <Image
-              src={image}
-              fill
-              alt="image"
-              className="object-cover object-center"
-            />
-          </div>
-        )}
+        <div className="h-full w-full absolute">
+          {image && (
+            <div className="relative h-full w-full ">
+              <Image
+                src={image}
+                fill
+                alt="image"
+                className="object-cover object-center "
+              />
+            </div>
+          )}
+        </div>
 
-        <div className="group-hover/bento:translate-x-2 transition duration-200"></div>
+        <div
+          className={cn(
+            titleClassName,
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+          )}
+        >
+          <p className="font-extralight  md:text-base">{description}</p>
+          <h1 className=" text-lg md:text-xl font-bold z-10">{title}</h1>
+        </div>
       </div>
     </div>
   );

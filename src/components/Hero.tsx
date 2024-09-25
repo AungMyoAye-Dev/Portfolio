@@ -69,7 +69,7 @@ const Hero = () => {
                 className="relative size-60 md:size-80  "
               >
                 <Image
-                  src={""}
+                  src={"/profile.svg"}
                   fill
                   alt="Aung Myo Aye's profile photo"
                   className="object-cover  "

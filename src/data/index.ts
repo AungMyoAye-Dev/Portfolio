@@ -4,6 +4,7 @@ export const Griditems = [
     title: "I prioritize client collaboration, fostering open communication",
     description: "",
     className: "md:col-span-2 md:row-span-2 md:h-[60vh]",
+    titleClassName: "jusftiy-end",
     image: "/b1.svg",
   },
   {
@@ -24,7 +25,7 @@ export const Griditems = [
     title: "The Power of Communication",
     description:
       "Understand the impact of effective communication in our lives.",
-    image: "/b1.svg",
+    image: "",
   },
   {
     id: 5,

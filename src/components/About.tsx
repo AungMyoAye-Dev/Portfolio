@@ -17,6 +17,7 @@ const About = () => {
             description={item.description}
             className={item.className}
             image={item.image}
+            titleClassName={item.titleClassName}
           />
         ))}
       </BentoGrid>
