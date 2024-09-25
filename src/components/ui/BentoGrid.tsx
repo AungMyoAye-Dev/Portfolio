@@ -12,7 +12,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid  grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mx-auto ",
+        "grid  grid-cols-1 md:grid-cols-5 gap-4 md:gap-8 mx-auto ",
         className
       )}
     >
@@ -43,7 +43,7 @@ export const BentoGridItem = ({
         className
       )}
     >
-      <div className="h-full">
+      <div className="h-full ">
         <div className="h-full w-full absolute">
           {image && (
             <div className="relative h-full w-full ">
