@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Provider attribute="class" defaultTheme="system" enableSystem>
+        <Provider attribute="class" defaultTheme="dark" enableSystem>
           <Nav />
           <div className="max-w-8xl mx-auto">{children}</div>
         </Provider>

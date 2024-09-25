@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import ThemeChanger from "./ThemeChanger";
 
 const Nav = () => {
   return (
@@ -15,34 +14,32 @@ const Nav = () => {
           </h1>
         </a>
       </div>
-      <div className="flex items-center gap-8 ">
-        <ThemeChanger />
-        <div className="hidden md:flex items-center gap-8 text-xl ">
-          <a
-            href="#home"
-            className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
-          >
-            About
-          </a>
-          <a
-            href="#eduction"
-            className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
-          >
-            Eduction
-          </a>
-          <a
-            href="#contact"
-            className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
-          >
-            Contact
-          </a>
-        </div>
+
+      <div className="hidden md:flex items-center gap-8 text-xl ">
+        <a
+          href="#home"
+          className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
+        >
+          Home
+        </a>
+        <a
+          href="#about"
+          className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
+        >
+          About
+        </a>
+        <a
+          href="#eduction"
+          className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
+        >
+          Eduction
+        </a>
+        <a
+          href="#contact"
+          className="hover:text-purple-400 hover:underline  hover:underline-offset-8"
+        >
+          Contact
+        </a>
       </div>
     </nav>
   );
