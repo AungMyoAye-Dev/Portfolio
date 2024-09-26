@@ -5,6 +5,7 @@ import { BackgroundGradientAnimation } from "./GradientBackground";
 import Image from "next/image";
 import { Button } from "./MovingBorder";
 import { useState } from "react";
+import { GlobeDemo } from "./GridGlobe";
 
 export const BentoGrid = ({
   className,
@@ -76,7 +77,7 @@ export const BentoGridItem = ({
             </div>
           )}
         </div>
-
+        {id === 2 && <GlobeDemo />}
         {/* Gradient background */}
         {id === 6 && (
           <BackgroundGradientAnimation>
