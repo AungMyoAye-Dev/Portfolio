@@ -1,24 +1,41 @@
 import React from "react";
 import { PinContainer } from "./3Dpin";
+import Image from "next/image";
 
-const Card = () => {
+interface CardProps {
+  image: string;
+  title: string;
+  description: string;
+}
+
+const Card = ({ image, title, description }: CardProps) => {
   return (
     <div className="h-[25rem] sm:w-96 w-[80vw] flex items-center justify-center bg-lime-400">
       <PinContainer
         title="/ui.aceternity.com"
         href="https://twitter.com/mannupaaji"
       >
-        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 sm:w-96 w-[80vw] h-[20vh] lg:h-[30vh] mb-10 ">
-          <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-            Aceternity UI
-          </h3>
-          <div className="text-base !m-0 !p-0 font-normal">
-            <span className="text-slate-500 ">
-              Customizable Tailwind CSS and Framer Motion Components.
-            </span>
+        <div className="relative overflow-hidden flex basis-full flex-col  p-4 tracking-tight  sm:w-96 w-[80vw] h-[20vh] lg:h-[30vh]  ">
+          <div
+            className="relative w-full h-full overflow-hidden lg:rounded-xl"
+            style={{ backgroundColor: "#13162D" }}
+          >
+            <img src="/bg.png" alt="bgimg" />
+            <Image src={image} fill alt="cover" className="object-cover" />
           </div>
-          <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
         </div>
+        <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+          {title}
+        </h1>
+        <p
+          className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+          style={{
+            color: "#BEC1DD",
+            margin: "1vh 0",
+          }}
+        >
+          {description}
+        </p>
       </PinContainer>
     </div>
   );

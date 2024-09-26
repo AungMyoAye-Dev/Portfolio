@@ -12,8 +12,8 @@ const Projects = () => {
       </h1>
 
       <main className="grid md:grid-cols-2 gap-4 mx-auto place-items-center">
-        {projects.map((project) => (
-          <Card />
+        {projects.map((item) => (
+          <Card image={item.img} title={item.title} description={item.des} />
         ))}
       </main>
     </section>
