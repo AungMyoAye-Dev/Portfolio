@@ -28,14 +28,14 @@ export const gridItems = [
     description:
       "Understand the impact of effective communication in our lives.",
     className: "md:col-span-2 ",
-    image: "",
+    image: "/grid.svg",
   },
   {
     id: 5,
     title: "The Pursuit of Knowledge",
     description: "Join the quest for understanding and enlightenment.",
     className: "md:col-span-3 md:row-span-2",
-    image: "/",
+    image: "/b5.svg",
   },
   {
     id: 6,
