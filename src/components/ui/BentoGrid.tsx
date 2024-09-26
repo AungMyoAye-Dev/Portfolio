@@ -115,7 +115,7 @@ export const BentoGridItem = ({
                 duration={Math.floor(Math.random() * 10000) + 1000}
                 className=" text-black dark:text-white border-neutral-400 dark:border-slate-800 bg-slate-900  text-base bg-opacity-95 px-6 py-3 shadow-md"
               >
-                {copied ? "Copied email successfully" : "Copy My Email"}
+                {copied ? "Copied email successfully" : "Copy My Email Address"}
               </Button>
             </div>
           )}
