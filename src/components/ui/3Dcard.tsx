@@ -6,15 +6,14 @@ interface CardProps {
   image: string;
   title: string;
   description: string;
+  link: string;
+  iconList?: string[];
 }
 
-const Card = ({ image, title, description }: CardProps) => {
+const Card = ({ image, title, description, link, iconList }: CardProps) => {
   return (
     <div className="h-[25rem] sm:w-96 w-[80vw] flex items-center justify-center bg-lime-400">
-      <PinContainer
-        title="/ui.aceternity.com"
-        href="https://twitter.com/mannupaaji"
-      >
+      <PinContainer title={link} href={link}>
         <div className="relative overflow-hidden flex basis-full flex-col  p-4 tracking-tight  sm:w-96 w-[80vw] h-[20vh] lg:h-[30vh]  ">
           <div
             className="relative w-full h-full overflow-hidden lg:rounded-xl"
@@ -36,6 +35,28 @@ const Card = ({ image, title, description }: CardProps) => {
         >
           {description}
         </p>
+
+        <div className="flex justify-between py-2">
+          <div className="flex justify-center">
+            {iconList?.map((icon, i) => (
+              <div
+                key={i}
+                className="relative size-8 border border-white/[.2] rounded-full flex justify-center items-center"
+                style={{ transform: `translateX(${-5 * i + 2}px)` }}
+              >
+                <Image src={icon} width={24} height={24} alt="icons" />
+              </div>
+            ))}
+          </div>
+          <div>
+            <a
+              href="#"
+              className="flex lg:text-xl md:text-xs text-sm text-purple"
+            >
+              Check Live Site
+            </a>
+          </div>
+        </div>
       </PinContainer>
     </div>
   );

@@ -13,7 +13,14 @@ const Projects = () => {
 
       <main className="grid md:grid-cols-2 gap-4 mx-auto place-items-center">
         {projects.map((item) => (
-          <Card image={item.img} title={item.title} description={item.des} />
+          <Card
+            key={item.id}
+            image={item.img}
+            title={item.title}
+            description={item.des}
+            link={item.link}
+            iconList={item.iconLists}
+          />
         ))}
       </main>
     </section>
