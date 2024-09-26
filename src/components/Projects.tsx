@@ -5,13 +5,13 @@ import Card from "./ui/3Dcard";
 
 const Projects = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 space-y-10">
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-serif text-center">
         My Small Section Of{" "}
         <span className="text-purple-300">Recent Projects</span>
       </h1>
 
-      <main className="grid md:grid-cols-2 gap-4 mx-auto place-items-center">
+      <main className="flex flex-wrap items-center justify-center p-4 gap-16 max-w-7xl mx-auto">
         {projects.map((item) => (
           <Card
             key={item.id}

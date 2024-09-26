@@ -12,9 +12,9 @@ interface CardProps {
 
 const Card = ({ image, title, description, link, iconList }: CardProps) => {
   return (
-    <div className="h-[25rem] sm:w-96 w-[80vw] flex items-center justify-center bg-lime-400">
+    <div className="h-[25rem] lg:min-h-[32.5rem] sm:w-96 w-[80vw] flex items-center justify-center ">
       <PinContainer title={link} href={link}>
-        <div className="relative overflow-hidden flex basis-full flex-col  p-4 tracking-tight  sm:w-96 w-[80vw] h-[20vh] lg:h-[30vh]  ">
+        <div className="relative overflow-hidden flex basis-full flex-col  p-4  sm:w-96 w-[80vw] h-[20vh]  lg:h-[30vh]  ">
           <div
             className="relative w-full h-full overflow-hidden lg:rounded-xl"
             style={{ backgroundColor: "#13162D" }}
