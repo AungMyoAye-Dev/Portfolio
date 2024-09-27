@@ -23,11 +23,11 @@ const Card = ({ image, title, description, link, iconList }: CardProps) => {
             <Image src={image} fill alt="cover" className="object-cover" />
           </div>
         </div>
-        <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+        <h1 className="font-bold lg:text-xl md:text-lg text-base line-clamp-1 font-serif">
           {title}
         </h1>
         <p
-          className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+          className="lg:text-lg lg:font-normal font-light text-sm line-clamp-2"
           style={{
             color: "#BEC1DD",
             margin: "1vh 0",

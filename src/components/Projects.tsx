@@ -11,7 +11,7 @@ const Projects = () => {
         <span className="text-purple-300">Recent Projects</span>
       </h1>
 
-      <main className="flex flex-wrap items-center justify-center p-4 gap-16 max-w-7xl mx-auto">
+      <main className="flex flex-wrap items-center justify-center p-4 gap-x-16 max-w-7xl mx-auto">
         {projects.map((item) => (
           <Card
             key={item.id}
